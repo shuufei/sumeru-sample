@@ -1,0 +1,19 @@
+
+<ng-container *ngIf="completedSetup; else notCompleted">
+  <p>Completed MFA Setup</p>
+</ng-container>
+<ng-template #notCompleted>
+  <h2>MFA Setting</h2>
+
+  <button (click)="setup()">setup</button>
+  <p>{{setupToken}}</p>
+
+  <ng-container *ngIf="setupToken">
+    <input type="text" [formControl]="verifyCode">
+    <button (click)="verify()">verify</button>
+  </ng-container>
+</ng-template>
+
+<div>
+  <button (click)="signout()">sign out</button>
+</div>

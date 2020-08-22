@@ -1,16 +1,29 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
+import Amplify from 'aws-amplify';
+import awsconfig from '../aws-exports';
+import { MfaSettingPageComponent } from './mfa-setting-page/mfa-setting-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+
+Amplify.configure(awsconfig);
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MfaSettingPageComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AmplifyUIAngularModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

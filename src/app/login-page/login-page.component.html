@@ -1,0 +1,17 @@
+<h2>Login</h2>
+
+<ng-container *ngIf="isShowMfaCode; else loginForm">
+  <div>
+    <h2>MFA</h2>
+    <input type="text" [formControl]="mfaCode">
+    <button (click)="confirm()">confirm</button>
+  </div>
+
+</ng-container>
+<ng-template #loginForm>
+  <form [formGroup]="loginFormGroup">
+    <input type="text" formControlName="email">
+    <input type="password" formControlName="password">
+    <button (click)="login()">login</button>
+  </form>
+</ng-template>
