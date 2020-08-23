@@ -21,6 +21,7 @@
     "@angular/router": "~10.0.6",
     "@aws-amplify/ui-angular": "^0.2.15",
     "aws-amplify": "^3.0.24",
+    "chart.js": "^2.9.3",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
@@ -29,6 +30,7 @@
     "@angular-devkit/build-angular": "~0.1000.5",
     "@angular/cli": "~10.0.5",
     "@angular/compiler-cli": "~10.0.6",
+    "@types/chart.js": "^2.9.24",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",

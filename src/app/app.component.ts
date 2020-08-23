@@ -25,15 +25,16 @@ export class AppComponent implements OnInit {
   ) {}
 
     async ngOnInit(): Promise<void> {
-      try {
-        const authenticatedUser = await Auth.currentAuthenticatedUser();
-        if (!authenticatedUser) {
-          throw new Error();
-        }
-        this.router.navigate(['/mfa_setting']);
-      } catch (error) {
-        this.router.navigate(['/login']);
-      }
+      this.router.navigate(['/report']);
+      // try {
+      //   const authenticatedUser = await Auth.currentAuthenticatedUser();
+      //   if (!authenticatedUser) {
+      //     throw new Error();
+      //   }
+      //   this.router.navigate(['/mfa_setting']);
+      // } catch (error) {
+      //   this.router.navigate(['/login']);
+      // }
     }
 
 }
