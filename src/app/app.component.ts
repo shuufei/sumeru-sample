@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
   ) {}
 
     async ngOnInit(): Promise<void> {
-      this.router.navigate(['/report']);
+      this.router.navigate(['/video']);
       // try {
       //   const authenticatedUser = await Auth.currentAuthenticatedUser();
       //   if (!authenticatedUser) {
