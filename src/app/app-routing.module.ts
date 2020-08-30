@@ -4,6 +4,7 @@ import { MfaSettingPageComponent } from './mfa-setting-page/mfa-setting-page.com
 import { LoginPageComponent } from './login-page/login-page.component';
 import { ReportPageComponent } from './report-page/report-page.component';
 import { VideoPageComponent } from './video-page/video-page.component';
+import { CalendarPageComponent } from './calendar-page/calendar-page.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,15 @@ const routes: Routes = [
   {
     path: 'video',
     component: VideoPageComponent
+  },
+  {
+    path: 'calendar',
+    component: CalendarPageComponent
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'calendar'
   }
 ];
 
