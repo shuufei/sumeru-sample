@@ -22,6 +22,12 @@ import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin
 import interactionPlugin from '@fullcalendar/interaction';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { FormFieldComponent } from './form-field/form-field.component'
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -38,7 +44,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     LoginPageComponent,
     ReportPageComponent,
     VideoPageComponent,
-    CalendarPageComponent
+    CalendarPageComponent,
+    FormFieldComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +57,12 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     MatNativeDateModule,
     MatFormFieldModule,
     FullCalendarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatInputModule,
+    MatSortModule,
+    MatProgressSpinnerModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

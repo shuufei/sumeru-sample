@@ -2,3 +2,21 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.calendar-small {
+  .mat-form-field-underline {
+    bottom: 0 !important;
+  }
+  .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
+  }
+  .mat-form-field-infix {
+    border-top: .5em solid #00000000 !important;
+  }
+  .mat-form-field-flex {
+    padding: 0em .75em 0 !important;
+  }
+  .mat-form-field-suffix {
+    transform: translateY(.3em);
+  }
+}
